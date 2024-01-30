@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.questionThree.PNetController">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <ImageView fitHeight="94.0" fitWidth="235.0" layoutX="55.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="382.0694122314453" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="42.0">
+      <Image url="@../../../download.png" />
+   </ImageView>
+   <Label layoutX="20.0" layoutY="187.0" text="Enter your Name:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="20.0" layoutY="224.0" text="Enter the Position:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="20.0" layoutY="261.0" text="Enter your Experience:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="nameText" layoutX="179.0" layoutY="185.0" />
+   <TextField fx:id="positionText" layoutX="179.0" layoutY="221.0" />
+   <Button fx:id="applyButton" contentDisplay="CENTER" layoutX="127.0" layoutY="384.0" mnemonicParsing="false" onAction="#applyOnClick" style="-fx-background-color: #FF0000; -fx-border-width: 2px; -fx-border-color: #FFFFFF; -fx-border-insets: 4px; -fx-border-radius: 6;" text="Apply" textFill="WHITE">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Button>
+   <ComboBox fx:id="experienceCombo" layoutX="179.0" layoutY="259.0" onAction="#SelectExperience" prefWidth="150.0" />
+</AnchorPane>
